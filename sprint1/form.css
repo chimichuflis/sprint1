@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    margin-top: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+}
+aside{
+    background-image: linear-gradient(-45deg, darkblue, purple, darkblue);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+aside article{
+    width: 65%;
+    height: 30%;
+    border-radius: 1rem;
+}
+#card-front{
+    background-image: linear-gradient(-45deg, blue, fuchsia, blue);
+}
+#card-back{
+    background-image: linear-gradient(aliceblue, aliceblue 20%, black 20%, black 40%, aliceblue 40%);
+    align-self: flex-end;
+}
+main{
+    height: 60%;
+    margin: 20%;
+
+}
+label, input{
+    display: block;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.date-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.date-flex div{
+    width: 50%;
+}
+.date-flex label{
+    width: 100%;
+}
+.date-flex input{
+    width: 50%;
+}
+input{
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid grey;
+}
